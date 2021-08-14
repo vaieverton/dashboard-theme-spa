@@ -6,14 +6,17 @@
 
 .right-content {
     flex-direction: column;
+    width: 100%;
 }
 
 .dark {
-    background-color: #3a3a3a;
+    background-color: #2e2e2e;
     color: #fafafa;
+    transition: 1s;
 }
 
 .light {
     background-color: #fafafa;
     color: #1a1a1a;
+    transition: 1s;
 }
