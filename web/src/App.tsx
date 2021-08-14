@@ -1,21 +1,19 @@
 import React from "react";
 import SideBar from "./components/SideBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Slicer from "./pages/HomePage/Slicer";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <SideBar />
+
         <Switch>
-          <Route path="/introduction">
-            <Slicer stage={0} />
-          </Route>
-          <Route path="/">
-            <SideBar />
-          </Route>
+          <Route path="/introduction" component={HomePage} />
+          <Route path="/" component={HomePage} />
           <Route path="*">
-              <h1>Not Found</h1>
+            <h1>Not Found</h1>
           </Route>
         </Switch>
       </div>

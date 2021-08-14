@@ -8,7 +8,7 @@ const SideBar: React.FC = () => {
   return (
     <div className={`main-sidebar ${toggled ? "toggled" : "unttogled"}`}>
       <button type="button" onClick={() => setToggled(!toggled)}>
-        <p>{toggled ? ">" : "<"}</p>
+        <p>{toggled ? "<" : ">"}</p>
       </button>
     </div>
   );
