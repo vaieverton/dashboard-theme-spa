@@ -1,15 +1,15 @@
 import React, { useState } from "react";
+import { useTheme } from "../../context/themeContext";
+import {InputSwitch} from 'primereact/inputswitch';
 
 import "./styles.css";
 
-const SideBar: React.FC = () => {
-  const [toggled, setToggled] = useState(false);
+const SideBar: React.FC = (toggled) => {
+  const {isToggled, isDark, changeTheme} = useTheme();
 
   return (
-    <div className={`main-sidebar ${toggled ? "toggled" : "unttogled"}`}>
-      <button type="button" onClick={() => setToggled(!toggled)}>
-        <p>{toggled ? "<" : ">"}</p>
-      </button>
+    <div className={`main-sidebar ${isToggled ? "toggled" : "untoggled"}`}>
+      <InputSwitch checked={isDark} onChange={changeTheme} />
     </div>
   );
 };

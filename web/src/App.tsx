@@ -1,22 +1,14 @@
-import React from "react";
-import SideBar from "./components/SideBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./global.scss"
+import Main from "./components/Main";
+import Routes from "./Routes";
 
 function App() {
   return (
     <Router>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <SideBar />
-
-        <Switch>
-          <Route path="/introduction" component={HomePage} />
-          <Route path="/" component={HomePage} />
-          <Route path="*">
-            <h1>Not Found</h1>
-          </Route>
-        </Switch>
-      </div>
+      <Main>
+        <Routes />
+      </Main>
     </Router>
   );
 }

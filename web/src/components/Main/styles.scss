@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.right-content {
+    flex-direction: column;
+}
+
+.dark {
+    background-color: #3a3a3a;
+    color: #fafafa;
+}
+
+.light {
+    background-color: #fafafa;
+    color: #1a1a1a;
+}
