@@ -4,7 +4,7 @@ import './styles.scss';
 import { FaAngleLeft, FaAngleRight, FaUserAlt } from "react-icons/fa";
 
 const TopBar: React.FC = () => {
-    const { isToggled, changeToggle, isDark } = useTheme();
+    const { isToggled, changeToggle } = useTheme();
 
     return (
         <div className="main-topbar">
@@ -15,7 +15,8 @@ const TopBar: React.FC = () => {
 
             </div>
 
-            <div>
+            <div className="row">
+                <p>Fazer login</p>
                 <FaUserAlt />
             </div>
         </div>

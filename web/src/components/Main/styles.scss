@@ -19,7 +19,7 @@
 }
 
 .light {
-    background-color: #acacac;
+    background-color: #d3d3d3;
     color: #1a1a1a;
     transition: 0.5s;
     button {
@@ -29,14 +29,16 @@
 }
 
 .content {
-    max-height: calc(100% - 50px);
+    height: calc(100% - 80px);
     padding: 15px;
 }
 
 .dark-ct {
     background-color: #2e2e2e;
+    transition: 0.5s;
 }
 
 .light-ct {
     background-color: #ffffff;
+    transition: 0.5s;
 }

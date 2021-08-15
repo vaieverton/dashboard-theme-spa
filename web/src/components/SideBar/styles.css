@@ -5,7 +5,7 @@
 }
 
 .untoggled {
-    width: 70px;
+    width: 20px;
     height: 100vh;
     transition: 0.5s;
 }
