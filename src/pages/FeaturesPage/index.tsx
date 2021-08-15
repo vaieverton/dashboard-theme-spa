@@ -2,8 +2,8 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const PageOne: React.FC = () => {
+const FeaturesPage: React.FC = () => {
   return <p>Page 1</p>;
 }
 
-export default PageOne;
+export default FeaturesPage;
