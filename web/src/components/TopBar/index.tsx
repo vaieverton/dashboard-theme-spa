@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from '../../context/themeContext';
 import './styles.scss';
 import { FaAngleLeft, FaAngleRight, FaUserAlt } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const TopBar: React.FC = () => {
     const { isToggled, changeToggle } = useTheme();
@@ -15,11 +16,10 @@ const TopBar: React.FC = () => {
 
             </div>
 
-            <div className="row">
-                <p>Fazer login</p>
+            <NavLink to='/user'>
                 <FaUserAlt />
-            </div>
-        </div>
+            </NavLink>
+        </div >
     );
 }
 
