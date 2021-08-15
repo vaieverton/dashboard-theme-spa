@@ -5,6 +5,8 @@
 - Single-Page-Application using react-router-dom
 - Collapsable sidebar with smooth animation
 
+<h3>Não quer clonar para ver o projeto? Sem problemas, você pode acessar aqui: https://dashboard-dark-light-theme.vercel.app/</h3>
+
 
 ▶️▶️▶️ HOW TO RUN ▶️▶️▶️
 

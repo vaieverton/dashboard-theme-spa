@@ -24,11 +24,11 @@ export const ThemeContext: React.FC = ({ children }) => {
     }
   }, []);
 
-  {/** Main states in the application, passed to all components */}
+  // Main states in the application, passed to all components 
   const [isDark, setIsDark] = useState(isDarkfromStorage);
   const [isToggled, setIsToggled] = useState(true);
 
-  {/** Funcions that handle the state change */}
+  // Funcions that handle the state change 
   const changeTheme = useCallback(() => {
   localStorage.setItem("isDark", isDark ? 'light' : 'dark');
     setIsDark(!isDark);
