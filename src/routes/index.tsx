@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import FeaturesPage from "../pages/FeaturesPage";
-import PageTwo from "../pages/PageTwo";
+import AboutMePage from "../pages/AboutMePage";
 
 const Routes: React.FC = () => {
     const NotFound =  () => (
@@ -12,9 +12,9 @@ const Routes: React.FC = () => {
     <Switch>
       <Route exact path="/" component={HomePage} />
  
-      <Route path="/page-1" component={FeaturesPage} />
+      <Route path="/features" component={FeaturesPage} />
 
-      <Route path="/page-2" component={PageTwo} />
+      <Route path="/about-me" component={AboutMePage} />
 
       <Route path="/user" component={FeaturesPage} />
 

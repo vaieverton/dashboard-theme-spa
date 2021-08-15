@@ -15,9 +15,9 @@ const MenuItem = (props: {data: IMenu}) => {
 }
 
 const Data: IMenu[] = [
-    {label: 'HOME', url: '/'},
-    {label: 'Página 1', url: '/page-1'},
-    {label: 'Página 2', url: 'page-2'}
+    {label: 'Inicio', url: '/'},
+    {label: 'Caracteristicas', url: '/features'},
+    {label: 'Sobre mim', url: '/about-me'}
     
 ]
 

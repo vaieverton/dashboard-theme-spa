@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTheme } from '../../context/themeContext';
 import './styles.scss';
-import { FaAngleLeft, FaAngleRight, FaUserAlt } from "react-icons/fa";
+import { FaUserAlt, FaBars } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 const TopBar: React.FC = () => {
-    const { isToggled, changeToggle } = useTheme();
+    const { changeToggle } = useTheme();
 
     return (
         <div className="main-topbar">
             <div>
                 <button type="button" onClick={changeToggle}>
-                    <p>{isToggled ? <FaAngleLeft /> : <FaAngleRight />}</p>
+                    <p><FaBars size={17} /></p>
                 </button>
 
             </div>
