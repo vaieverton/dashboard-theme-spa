@@ -5,18 +5,38 @@
 }
 
 .right-content {
-    flex-direction: column;
     width: 100%;
 }
 
 .dark {
-    background-color: #2e2e2e;
+    background-color: #1a1a1a;
     color: #fafafa;
-    transition: 1s;
+    transition: 0.5s;
+    button {
+        color: #fafafa;
+        transition: 0.5s;
+    }
 }
 
 .light {
-    background-color: #fafafa;
+    background-color: #acacac;
     color: #1a1a1a;
-    transition: 1s;
+    transition: 0.5s;
+    button {
+        color: #1a1a1a;
+        transition: 0.5s;
+    }
+}
+
+.content {
+    max-height: calc(100% - 50px);
+    padding: 15px;
+}
+
+.dark-ct {
+    background-color: #2e2e2e;
+}
+
+.light-ct {
+    background-color: #ffffff;
 }

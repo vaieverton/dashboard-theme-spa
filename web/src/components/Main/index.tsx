@@ -15,9 +15,8 @@ const Main: React.FC = ({children}) => {
           <div className="right-content">
               <TopBar />
 
-              <div>
+              <div className={`content ${isDark ? 'dark-ct' : 'light-ct'}`}>
                   {children}
-                  
               </div>
           </div>
       </div>

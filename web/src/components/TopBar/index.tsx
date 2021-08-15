@@ -1,22 +1,22 @@
 import React from 'react';
 import { useTheme } from '../../context/themeContext';
-
 import './styles.scss';
+import { FaAngleLeft, FaAngleRight, FaUserAlt } from "react-icons/fa";
 
 const TopBar: React.FC = () => {
     const { isToggled, changeToggle, isDark } = useTheme();
 
     return (
-        <div className="main-topbar" style={isDark ? {background: "#1a1a1a", transition: '0.5s'} : {background: "#acacac"}}>
+        <div className="main-topbar">
             <div>
                 <button type="button" onClick={changeToggle}>
-                    {isToggled ? '<' : '>'}
+                    <p>{isToggled ? <FaAngleLeft /> : <FaAngleRight />}</p>
                 </button>
 
             </div>
 
             <div>
-                content right
+                <FaUserAlt />
             </div>
         </div>
     );

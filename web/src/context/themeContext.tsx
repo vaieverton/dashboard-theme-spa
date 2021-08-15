@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 interface ThemeContextData {
   isDark: boolean;
-  setIsDark: any;
   changeTheme: any;
   isToggled: boolean;
   changeToggle: any;
@@ -11,12 +10,12 @@ interface ThemeContextData {
 
 const ThemeContextI = createContext<ThemeContextData>({} as ThemeContextData);
 
-const isDarkfromStorage = localStorage.getItem("@Portfolio: theme") === 'dark' ? true : false;
+const isDarkfromStorage = localStorage.getItem("theme") === 'dark' ? true : false;
 
 export const ThemeContext: React.FC = ({ children }) => {
   useEffect(() => {
-    if (!localStorage.getItem("@Portfolio: theme")) {
-      localStorage.setItem("@Portfolio: theme", "dark")
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "dark")
     }
   }, []);
 
@@ -24,7 +23,7 @@ export const ThemeContext: React.FC = ({ children }) => {
   const [isToggled, setIsToggled] = useState(true);
 
   const changeTheme = useCallback(() => {
-  localStorage.setItem("@Portfolio: isDark", isDark ? 'light' : 'dark');
+  localStorage.setItem("isDark", isDark ? 'light' : 'dark');
     setIsDark(!isDark);
   }, [isDark]);
 
@@ -34,7 +33,7 @@ export const ThemeContext: React.FC = ({ children }) => {
 
   return (
     <ThemeContextI.Provider
-      value={{ isDark, setIsDark, changeTheme, isToggled, changeToggle }}
+      value={{ isDark, changeTheme, isToggled, changeToggle }}
     >
       {children}
     </ThemeContextI.Provider>
