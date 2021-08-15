@@ -5,6 +5,10 @@ import TopBar from '../TopBar';
 
 import './styles.scss';
 
+/**
+ * @description - This is the main root of the viewable application, it organizes the scructure
+ * of the dashboard
+ */
 const Main: React.FC = ({children}) => {
     const {isDark} = useTheme();
 

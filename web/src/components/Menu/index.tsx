@@ -21,6 +21,9 @@ const Data: IMenu[] = [
     
 ]
 
+/**
+ * @description - Menu component to render all the pages in the application 
+ */
 const Menu: React.FC = () => {
   return (
       <div className="menu">
