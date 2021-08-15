@@ -30,7 +30,7 @@ export const ThemeContext: React.FC = ({ children }) => {
 
   // Funcions that handle the state change 
   const changeTheme = useCallback(() => {
-  localStorage.setItem("isDark", isDark ? 'light' : 'dark');
+  localStorage.setItem("theme", isDark ? 'light' : 'dark');
     setIsDark(!isDark);
   }, [isDark]);
 
